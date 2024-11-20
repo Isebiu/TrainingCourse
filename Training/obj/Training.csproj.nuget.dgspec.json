@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj": {}
+    "c:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj": {}
   },
   "projects": {
-    "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj": {
+    "c:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj",
+        "projectUniqueName": "c:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj",
         "projectName": "Training",
-        "projectPath": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj",
+        "projectPath": "c:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\Training.csproj",
         "packagesPath": "C:\\Users\\urech\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\obj\\",
+        "outputPath": "c:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\urech\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,25 +43,29 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.10, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[9.0.0, )"
+              "version": "[8.0.10, )"
             }
           },
           "imports": [

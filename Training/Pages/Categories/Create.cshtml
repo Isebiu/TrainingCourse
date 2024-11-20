@@ -1,0 +1,21 @@
+﻿@page
+@model Training.Pages.Categories.CreateModel
+
+
+<form method="post">
+    <div class="border p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary pl-3">Create Category</h2>
+            <hr />
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="Category.Name" class="p-0"></label>
+            <input asp-for="Category.Name" class="form-control" />
+        </div>
+        <div class="mb-3 row">
+            <label asp-for="Category.Order" class="p-0"></label>
+            <input asp-for="Category.Order" class="form-control" />
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+</form>
