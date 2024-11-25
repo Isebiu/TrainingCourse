@@ -2,38 +2,34 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Training.Data;
 using Training.Model;
-using Microsoft.EntityFrameworkCore;
 
 namespace Training.Pages.Categories
 {
-    public class CreateModel : PageModel
+    public class DeleteModel : PageModel
     {
         private readonly AppDbContext _db;
         [BindProperty]
         public Category Category { get; set; }
 
-        public CreateModel(AppDbContext db)
+        public DeleteModel(AppDbContext db)
         {
             _db = db;
         }
-        public void OnGet()
+        public void OnGet(int id)
         {
-
+            Category = _db.Categories.Find(id);
         }
         public async Task<IActionResult> OnPost()
         {
-            if (Category.Name == Category.Order.ToString())
-            {
-                ModelState.AddModelError("Category.Name", "The Name != Order");
-            }
-            if (ModelState.IsValid)
-            {
 
-                await _db.Categories.AddAsync(Category);
+            var categFromDb = _db.Categories.Find(Category.Id);
+            if (categFromDb != null)
+            {
+                _db.Categories.Remove(categFromDb);
                 await _db.SaveChangesAsync();
-
-                return RedirectToPage("./Index");
+                return RedirectToPage("Index");
             }
+
             return Page();
         }
     }

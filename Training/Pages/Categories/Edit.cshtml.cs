@@ -2,39 +2,39 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Training.Data;
 using Training.Model;
-using Microsoft.EntityFrameworkCore;
 
 namespace Training.Pages.Categories
 {
-    public class CreateModel : PageModel
+    public class EditModel : PageModel
     {
         private readonly AppDbContext _db;
         [BindProperty]
         public Category Category { get; set; }
 
-        public CreateModel(AppDbContext db)
+
+        public EditModel(AppDbContext db)
         {
             _db = db;
         }
-        public void OnGet()
+        public void OnGet(int id)
         {
+            Category = _db.Categories.Find(id);
+            //Category = _db.Categories.SingleOrDefault(o=>o.Id == id);
+            // Category = _db.Categories.FirstOrDefault(c => c.Id == id);
+            // Category = _db.Categories.Where(c => c.Id == id).FirstOrDefault();
 
         }
+
         public async Task<IActionResult> OnPost()
         {
-            if (Category.Name == Category.Order.ToString())
-            {
-                ModelState.AddModelError("Category.Name", "The Name != Order");
-            }
             if (ModelState.IsValid)
             {
-
-                await _db.Categories.AddAsync(Category);
+                _db.Categories.Update(Category);
                 await _db.SaveChangesAsync();
-
-                return RedirectToPage("./Index");
+                return RedirectToPage("Index");
             }
             return Page();
         }
+
     }
 }
