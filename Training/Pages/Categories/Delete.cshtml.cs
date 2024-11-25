@@ -27,6 +27,7 @@ namespace Training.Pages.Categories
             {
                 _db.Categories.Remove(categFromDb);
                 await _db.SaveChangesAsync();
+                TempData["success"] = "Category deleted succesfully!";
                 return RedirectToPage("Index");
             }
 

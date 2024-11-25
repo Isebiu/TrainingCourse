@@ -31,6 +31,7 @@ namespace Training.Pages.Categories
             {
                 _db.Categories.Update(Category);
                 await _db.SaveChangesAsync();
+                TempData["success"] = "Category updated succesfully!";
                 return RedirectToPage("Index");
             }
             return Page();
