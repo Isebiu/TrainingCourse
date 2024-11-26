@@ -20,4 +20,13 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Training.DataAccess\Training.DataAccess.csproj" />
+    <ProjectReference Include="..\Training.Models\Training.Models.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pages\Customer\" />
+  </ItemGroup>
+
 </Project>

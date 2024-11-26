@@ -1,0 +1,31 @@
+﻿@page
+@model Training.Pages.Admin.Categories.DeleteModel
+
+<form method="post">
+    <input hidden asp-for="Category.Id" />
+    <div class="border p-3">
+        <div class="row pt-2">
+            <h2 class="text-dark">Delete Category</h2>
+            <hr />
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Category.Name"></label>
+            <input asp-for="Category.Name" disabled class="form-control"></input>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Category.Order"></label>
+            <input asp-for="Category.Order" disabled class="form-control"></input>
+        </div>
+        <di class="row">
+
+            <div class="col-6">
+                <button type="submit" class="btn btn-danger" style="width:150px">Delete</button>
+            </div>
+            <div class="col-6 text-end">
+                <a asp-page="/Categories/Index" class="btn btn-secondary" style="width: 200px;">Back to the List</a>
+            </div>
+    </div>
+
+
+    </div>
+</form>

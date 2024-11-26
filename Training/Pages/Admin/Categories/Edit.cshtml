@@ -1,0 +1,23 @@
+﻿@page
+@model Training.Pages.Admin.Categories.EditModel
+
+<form method="post">
+    <input hidden asp-for="Category.Id" />
+    <div class="border p-3">
+        <div class="row pt-2">
+            <h2 class="text-dark">Edit Category</h2>
+            <hr />
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Category.Name"></label>
+            <input asp-for="Category.Name" type="text" class="form-control"></input>
+        </div>
+        <div class="row mb-3">
+            <label asp-for="Category.Order"></label>
+            <input asp-for="Category.Order" type="text" class="form-control "></input>
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+        
+
+    </div>
+</form>
