@@ -15,7 +15,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-dark border-bottom box-shadow mb-3 "
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-dark border-bottom box-shadow mb-3 "
             data-bs-theme="dark">
             <div class="container">
                 <a class="navbar-brand" asp-area="" asp-page="/Index">Training</a>
@@ -28,12 +28,15 @@
                         <li class="nav-item">
                             <a class="nav-link text-light" asp-area="" asp-page="/Index">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" asp-area="" asp-page="Admin/Categories/Index">Categories</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" data-bs-toggle="dropdown" href="#"
+                                role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" asp-area="" asp-page="/Admin/Categories/Index">Categories</a>
+                                <a class="dropdown-item" asp-area="" asp-page="/Admin/FoodTypes/Index">FoodTypes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-light" href="#">Separated link</a>
+                            </div>
                     </ul>
                 </div>
             </div>
@@ -46,9 +49,9 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            2024 - Training - <a asp-area="" asp-page="/Privacy">Privacy</a>
+    <footer class="border-top footer text-muted bg-dark">
+        <div class="container text-light">
+            2024 - Training Sebi
         </div>
     </footer>
 

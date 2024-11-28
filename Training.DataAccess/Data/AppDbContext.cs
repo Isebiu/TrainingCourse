@@ -14,6 +14,8 @@ public class AppDbContext : DbContext
     }
     public DbSet<Category> Categories { get; set; }
 
+    public DbSet<FoodType> FoodTypes { get; set; }
+
     // Seeding the table Categories 
     // public object Category { get; internal set; }
 

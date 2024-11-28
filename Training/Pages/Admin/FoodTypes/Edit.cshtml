@@ -1,0 +1,27 @@
+﻿@page
+@model Training.Pages.Admin.FoodTypes.EditModel
+<form method="post">
+    <input hidden asp-for="FoodType.Id" />
+    <div class="border p-3">
+        <div class="row pt-2">
+            <h2 class="text-dark">Edit FoodType</h2>
+            <hr />
+        </div>
+        <div class="row mb-3">
+            <label asp-for="FoodType.Name"></label>
+            <input asp-for="FoodType.Name" class="form-control"></input>
+            <span asp-validation-for="FoodType.Name" class="text-danger"></span>
+        </div>
+        <di class="row">
+
+            <div class="col-6">
+                <button type="submit" class="btn btn-danger" style="width:150px">Update</button>
+            </div>
+            <div class="col-6 text-end">
+                <a asp-page="Index" class="btn btn-secondary" style="width: 200px;">Back to the List</a>
+            </div>
+    </div>
+
+
+    </div>
+</form>

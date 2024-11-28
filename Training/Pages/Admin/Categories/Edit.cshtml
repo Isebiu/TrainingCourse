@@ -16,8 +16,14 @@
             <label asp-for="Category.Order"></label>
             <input asp-for="Category.Order" type="text" class="form-control "></input>
         </div>
-        <button type="submit" class="btn btn-primary">Update</button>
-        
+        <div class="row">
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary">Update</button>
+            </div>
+            <div class="col-6 text-end">
+                <a asp-page="Index" class="btn btn-secondary" style="width: 200px;">Back to the List</a>
+            </div>
+        </div>
 
     </div>
 </form>
