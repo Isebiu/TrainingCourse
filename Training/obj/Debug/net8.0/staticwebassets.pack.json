@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Training.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Training.bundle.scp.css"
+      "PackagePath": "staticwebassets\\Training.6fldswkhsh.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\css\\site.css",
@@ -243,6 +243,10 @@
     {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Training.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Training.Microsoft.AspNetCore.StaticWebAssets.props",

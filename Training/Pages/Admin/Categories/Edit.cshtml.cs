@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Training.DataAccess.Data;
+using Training.DataAccess.Repository.IRepository;
 using Training.Models;
 
 
@@ -8,18 +9,18 @@ namespace Training.Pages.Admin.Categories
 {
     public class EditModel : PageModel
     {
-        private readonly AppDbContext _db;
+        private readonly IUnitOfWork _unitOfWork;
         [BindProperty]
         public Category Category { get; set; }
-
-
-        public EditModel(AppDbContext db)
+        public EditModel(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
+
+
         public void OnGet(int id)
         {
-            Category = _db.Categories.Find(id);
+            Category = _unitOfWork.Category.GetFirstOrDefault(u => u.Id == id);
             //Category = _db.Categories.SingleOrDefault(o=>o.Id == id);
             // Category = _db.Categories.FirstOrDefault(c => c.Id == id);
             // Category = _db.Categories.Where(c => c.Id == id).FirstOrDefault();
@@ -30,8 +31,8 @@ namespace Training.Pages.Admin.Categories
         {
             if (ModelState.IsValid)
             {
-                _db.Categories.Update(Category);
-                await _db.SaveChangesAsync();
+                _unitOfWork.Category.Update(Category);
+                _unitOfWork.Save();
                 TempData["success"] = "Category updated succesfully!";
                 return RedirectToPage("Index");
             }

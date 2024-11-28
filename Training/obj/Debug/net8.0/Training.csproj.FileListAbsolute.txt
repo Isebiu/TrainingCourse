@@ -261,3 +261,7 @@ C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\Trainin
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\Training.Models.dll
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\Training.DataAccess.pdb
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\Training.Models.pdb
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\Training.staticwebassets.endpoints.json
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\staticwebassets\msbuild.Training.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

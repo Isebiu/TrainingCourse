@@ -4,6 +4,8 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Training.DataAccess.Repository;
+using Training.DataAccess.Repository.IRepository;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +16,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection"))
 );
-
+builder.Services.AddScoped<IUnitOfWork, UnitOfwork>(); //inregistram ICategoryRepository si IFoodTypeRepo in DI container 
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

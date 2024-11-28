@@ -2,19 +2,21 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using Training.DataAccess.Data;
+using Training.DataAccess.Repository;
+using Training.DataAccess.Repository.IRepository;
 using Training.Models;
 
 namespace Training.Pages.Admin.FoodTypes
 {
     public class CreateModel : PageModel
     {
-        private readonly AppDbContext _db;
+        private readonly IUnitOfWork _unitOfWork;
         [BindProperty]
         public FoodType FoodType { get; set; }
 
-        public CreateModel(AppDbContext db)
+        public CreateModel(IUnitOfWork unitOfWork)
         {
-            _db = db;
+            _unitOfWork = unitOfWork;
         }
         public void OnGet()
         {
@@ -28,8 +30,8 @@ namespace Training.Pages.Admin.FoodTypes
             }
             if (ModelState.IsValid) //Verif daca modelul este valid
             {
-                await _db.FoodTypes.AddAsync(FoodType);
-                await _db.SaveChangesAsync();
+                _unitOfWork.FoodType.Add(FoodType);
+                _unitOfWork.Save();
                 TempData["success"] = "Food Type created succesfully!";
                 return RedirectToPage("Index");
             }
