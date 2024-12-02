@@ -10,6 +10,7 @@ namespace Training.DataAccess.Repository.IRepository
     {
         ICategoryRepository Category { get; }
         IFoodTypeRepository FoodType { get; }
+        IMenuItemRepository MenuItem { get; }
         void Save();
     }
 }

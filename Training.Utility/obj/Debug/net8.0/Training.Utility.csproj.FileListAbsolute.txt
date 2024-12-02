@@ -1,0 +1,12 @@
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\bin\Debug\net8.0\Training.Utility.deps.json
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\bin\Debug\net8.0\Training.Utility.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\bin\Debug\net8.0\Training.Utility.pdb
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.AssemblyInfoInputs.cache
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.AssemblyInfo.cs
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.csproj.CoreCompileInputs.cache
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.sourcelink.json
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\refint\Training.Utility.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.pdb
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\ref\Training.Utility.dll

@@ -36,4 +36,6 @@ app.UseAuthorization();
 
 app.MapRazorPages();
 
+app.MapControllers(); //it give us the ability to use controllers 
+
 app.Run();

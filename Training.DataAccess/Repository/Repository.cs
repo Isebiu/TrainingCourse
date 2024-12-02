@@ -18,6 +18,7 @@ namespace Training.DataAccess.Repository
         public Repository(AppDbContext db)
         {
             _db = db;
+            
             this.dbSet = db.Set<T>();
         }
 
@@ -26,10 +27,17 @@ namespace Training.DataAccess.Repository
             dbSet.Add(entity); //Facem Operatia de adaugare a entitatii primite exact cum faceam in pagini _db.Add(CAtegory sau Foodtype)
         }
 
-        public IList<T> GetAll()
+        public IList<T> GetAll(string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
-            return query.ToList();
+            if (includeProperties != null)
+            {   //abc,,xyz -> abc xyz
+                foreach (var property in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(property);  //e echivalent daca am folosi _db direct astfel: _db.MenuItem.Include(u=>u.FoodType).Include(u => u.Category);
+                }
+            }
+                return query.ToList();
             
         }
 
