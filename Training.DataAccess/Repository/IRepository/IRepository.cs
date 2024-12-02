@@ -1,4 +1,5 @@
 using System;
+using System.Linq.Expressions;
 
 namespace Training.DataAccess.Repository.IRepository;
 
@@ -10,5 +11,7 @@ public interface IRepository<T> where T : class
     void Remove(T entity);
     void RemoveRange(IEnumerable<T> entity);
 
+    IList<T> GetAll();
+    T GetFirstOrDefault(Expression<Func<T,bool>>?filter = null);
 
 }
