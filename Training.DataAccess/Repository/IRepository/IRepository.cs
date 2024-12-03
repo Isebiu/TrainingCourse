@@ -11,7 +11,9 @@ public interface IRepository<T> where T : class
     void Remove(T entity);
     void RemoveRange(IEnumerable<T> entity);
 
-    IList<T> GetAll(string? includeProperties=null);
-    T GetFirstOrDefault(Expression<Func<T,bool>>?filter = null);
+    IList<T> GetAll(Expression<Func<T, bool>>? filter = null,
+        Func<IQueryable<T>,IOrderedQueryable<T>>? orderby =null,
+        string ? includeProperties=null);
+    T GetFirstOrDefault(Expression<Func<T,bool>>?filter = null, string? includeProperties = null);
 
 }

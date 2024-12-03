@@ -27,9 +27,14 @@ namespace Training.DataAccess.Repository
             dbSet.Add(entity); //Facem Operatia de adaugare a entitatii primite exact cum faceam in pagini _db.Add(CAtegory sau Foodtype)
         }
 
-        public IList<T> GetAll(string? includeProperties = null)
+        public IList<T> GetAll(Expression<Func<T, bool>>? filter = null,
+            Func<IQueryable<T>, IOrderedQueryable<T>>? orderby = null, string ? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
             if (includeProperties != null)
             {   //abc,,xyz -> abc xyz
                 foreach (var property in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
@@ -37,16 +42,27 @@ namespace Training.DataAccess.Repository
                     query = query.Include(property);  //e echivalent daca am folosi _db direct astfel: _db.MenuItem.Include(u=>u.FoodType).Include(u => u.Category);
                 }
             }
-                return query.ToList();
+            if(orderby!= null)
+            {
+                return orderby(query).ToList();
+            }
+            return query.ToList();
             
         }
 
-        public T GetFirstOrDefault(Expression<Func<T, bool>>? filter = null)
+        public T GetFirstOrDefault(Expression<Func<T, bool>>? filter = null, string? includeProperties = null)
         {
             IQueryable<T> query = dbSet;
             if(filter != null)
             {
                 query = query.Where(filter);
+            }
+            if (includeProperties != null)
+            {   //abc,,xyz -> abc xyz
+                foreach (var property in includeProperties.Split(new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+                {
+                    query = query.Include(property);  //e echivalent daca am folosi _db direct astfel: _db.MenuItem.Include(u=>u.FoodType).Include(u => u.Category);
+                }
             }
             return query.FirstOrDefault();
         }

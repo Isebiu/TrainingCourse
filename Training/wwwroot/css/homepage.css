@@ -1,0 +1,5 @@
+﻿.fixed-height-image {
+    height: 500px; /* Ajustează înălțimea după preferință */
+    object-fit: cover;
+    width: 100%;
+}
