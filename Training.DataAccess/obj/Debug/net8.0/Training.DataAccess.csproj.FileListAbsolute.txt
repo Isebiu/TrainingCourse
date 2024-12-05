@@ -1,4 +1,5 @@
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\bin\Debug\net8.0\Training.DataAccess.deps.json
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\bin\Debug\net8.0\Training.DataAccess.runtimeconfig.json
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\bin\Debug\net8.0\Training.DataAccess.dll
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\bin\Debug\net8.0\Training.DataAccess.pdb
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\bin\Debug\net8.0\Training.Models.dll
@@ -13,6 +14,5 @@ C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net8.0\Training.DataAccess.dll
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net8.0\refint\Training.DataAccess.dll
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net8.0\Training.DataAccess.pdb
-C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net8.0\ref\Training.DataAccess.dll
-C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\bin\Debug\net8.0\Training.DataAccess.runtimeconfig.json
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net8.0\Training.DataAccess.genruntimeconfig.cache
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.DataAccess\obj\Debug\net8.0\ref\Training.DataAccess.dll
