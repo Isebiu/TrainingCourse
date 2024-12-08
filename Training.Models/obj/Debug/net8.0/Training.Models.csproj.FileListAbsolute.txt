@@ -1,6 +1,7 @@
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\bin\Debug\net8.0\Training.Models.deps.json
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\bin\Debug\net8.0\Training.Models.dll
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\bin\Debug\net8.0\Training.Models.pdb
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\obj\Debug\net8.0\Training.Models.csproj.AssemblyReference.cache
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\obj\Debug\net8.0\Training.Models.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\obj\Debug\net8.0\Training.Models.AssemblyInfoInputs.cache
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Models\obj\Debug\net8.0\Training.Models.AssemblyInfo.cs

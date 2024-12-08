@@ -10,3 +10,4 @@ C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\refint\Training.Utility.dll
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.pdb
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\ref\Training.Utility.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training.Utility\obj\Debug\net8.0\Training.Utility.csproj.AssemblyReference.cache

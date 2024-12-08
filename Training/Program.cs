@@ -7,6 +7,8 @@ using Microsoft.Extensions.Hosting;
 using Training.DataAccess.Repository;
 using Training.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Identity;
+using Training.Utility;
+using Microsoft.AspNetCore.Identity.UI.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,11 +16,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 //.AddRazorRuntimeCompilation();
 
+//var connstr = builder.Configuration.GetConnectionString("DefaultConnection");
+
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(
     builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<AppDbContext>();
+builder.Services.AddIdentity<IdentityUser,IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); 
+
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
+
 builder.Services.AddScoped<IUnitOfWork, UnitOfwork>(); //inregistram ICategoryRepository si IFoodTypeRepo in DI container 
 var app = builder.Build();
 
@@ -34,8 +42,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseAuthentication();
 
-//app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();

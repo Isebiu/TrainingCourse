@@ -18,6 +18,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
+using Training.Models;
+using Training.Utility;
 
 namespace Training.Areas.Identity.Pages.Account
 {
@@ -29,13 +31,15 @@ namespace Training.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
+        private readonly RoleManager<IdentityRole> _roleManager;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
             IUserStore<IdentityUser> userStore,
             SignInManager<IdentityUser> signInManager,
             ILogger<RegisterModel> logger,
-            IEmailSender emailSender)
+            IEmailSender emailSender,
+            RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _userStore = userStore;
@@ -43,6 +47,7 @@ namespace Training.Areas.Identity.Pages.Account
             _signInManager = signInManager;
             _logger = logger;
             _emailSender = emailSender;
+            _roleManager = roleManager;
         }
 
         /// <summary>
@@ -97,6 +102,13 @@ namespace Training.Areas.Identity.Pages.Account
             [Display(Name = "Confirm password")]
             [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
             public string ConfirmPassword { get; set; }
+
+            [Required]
+            public string FirstName { get; set; }
+            [Required]
+            public string LastName { get; set; }
+            [Required]
+            public string PhoneNumber { get; set; }
         }
 
 
@@ -110,20 +122,57 @@ namespace Training.Areas.Identity.Pages.Account
         {
             returnUrl ??= Url.Content("~/");
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-            if (ModelState.IsValid)
+            if (ModelState.IsValid) //verif daca modelstate e valid
             {
-                var user = CreateUser();
+                var user = CreateUser(); //creaza un nou user -> creaza o instanta default pt identitate user
 
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
-                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
-                var result = await _userManager.CreateAsync(user, Input.Password);
+                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None); //seteaza numele
+                await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None); //seteaza email-ul
+                user.FisrtName = Input.FirstName;
+                user.LastName = Input.LastName;
+                user.PhoneNumber = Input.PhoneNumber;
+
+
+                var result = await _userManager.CreateAsync(user, Input.Password); // metoda principala care creaza userul si parola scrisa de acesta 
+
+                if(! await _roleManager.RoleExistsAsync(SD.KitchenRole))
+                {
+                    await _roleManager.CreateAsync(new IdentityRole(SD.KitchenRole));
+                    //_roleManager.CreateAsync(new IdentityRole(SD.KitchenRole)).GetAwaiter().GetResult();
+                    await _roleManager.CreateAsync(new IdentityRole(SD.ManagerRole));
+                    await _roleManager.CreateAsync(new IdentityRole(SD.FrontDeskRole));
+                    await _roleManager.CreateAsync(new IdentityRole(SD.CutromerRole));
+                }
 
                 if (result.Succeeded)
                 {
+                    string role = Request.Form["rdUserRole"].ToString();
+                    if (role == SD.KitchenRole)
+                    {
+                        await _userManager.AddToRoleAsync(user, SD.KitchenRole);
+                    }
+                    else
+                    {
+                        if (role == SD.ManagerRole)
+                        {
+                            await _userManager.AddToRoleAsync(user, SD.ManagerRole);
+                        }
+                        else
+                        {
+                            if (role == SD.FrontDeskRole)
+                            {
+                                await _userManager.AddToRoleAsync(user, SD.FrontDeskRole);
+                            }
+                            else
+                            {
+                                await _userManager.AddToRoleAsync(user, SD.CutromerRole);
+                            }
+                        }
+                    }
                     _logger.LogInformation("User created a new account with password.");
 
-                    var userId = await _userManager.GetUserIdAsync(user);
-                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
+                    var userId = await _userManager.GetUserIdAsync(user); //get user Id
+                    var code = await _userManager.GenerateEmailConfirmationTokenAsync(user); //generam un mail 
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));
                     var callbackUrl = Url.Page(
                         "/Account/ConfirmEmail",
@@ -132,7 +181,7 @@ namespace Training.Areas.Identity.Pages.Account
                         protocol: Request.Scheme);
 
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
-                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>.");
+                        $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>."); //trimitem mail-ul pentru confirmare
 
                     if (_userManager.Options.SignIn.RequireConfirmedAccount)
                     {
@@ -154,11 +203,11 @@ namespace Training.Areas.Identity.Pages.Account
             return Page();
         }
 
-        private IdentityUser CreateUser()
+        private AppUser CreateUser()
         {
             try
             {
-                return Activator.CreateInstance<IdentityUser>();
+                return Activator.CreateInstance<AppUser>();
             }
             catch
             {
