@@ -25,6 +25,7 @@ namespace Training.DataAccess.Repository
         public void Add(T entity)
         {
             dbSet.Add(entity); //Facem Operatia de adaugare a entitatii primite exact cum faceam in pagini _db.Add(CAtegory sau Foodtype)
+            //dbSet.AddAsync(entity);
         }
 
         public IList<T> GetAll(Expression<Func<T, bool>>? filter = null,

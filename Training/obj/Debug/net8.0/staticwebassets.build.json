@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yLsaRCoaKIhsYLixoVoASY3L6Fo7/QpsVAnUo3+LVPU=",
+  "Hash": "+d7UafdXEM6y9B4K/RoK4m+gtR6TqhpIDMOZcRS0fKg=",
   "Source": "Training",
   "BasePath": "_content/Training",
   "Mode": "Default",
@@ -1690,8 +1690,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "37zymvappm",
-      "Integrity": "UYdtHfrvqef/N/vIY7I6LquRQqv/hxYEfETCfXdqr10=",
+      "Fingerprint": "bdv97lnxbc",
+      "Integrity": "8W2KVtzlyprhvU0HQgfOdWV4CvyrJbyEAIDkshM2P5k=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
@@ -6489,7 +6489,7 @@
       ]
     },
     {
-      "Route": "lib/bootstrap/dist/css/bootstrap.37zymvappm.css",
+      "Route": "lib/bootstrap/dist/css/bootstrap.bdv97lnxbc.css",
       "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6499,7 +6499,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "297633"
+          "Value": "329089"
         },
         {
           "Name": "Content-Type",
@@ -6507,11 +6507,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UYdtHfrvqef/N/vIY7I6LquRQqv/hxYEfETCfXdqr10=\""
+          "Value": "\"8W2KVtzlyprhvU0HQgfOdWV4CvyrJbyEAIDkshM2P5k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 11:58:26 GMT"
+          "Value": "Mon, 09 Dec 2024 18:17:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6521,7 +6521,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "37zymvappm"
+          "Value": "bdv97lnxbc"
         },
         {
           "Name": "label",
@@ -6529,7 +6529,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-UYdtHfrvqef/N/vIY7I6LquRQqv/hxYEfETCfXdqr10="
+          "Value": "sha256-8W2KVtzlyprhvU0HQgfOdWV4CvyrJbyEAIDkshM2P5k="
         }
       ]
     },
@@ -6544,7 +6544,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "297633"
+          "Value": "329089"
         },
         {
           "Name": "Content-Type",
@@ -6552,11 +6552,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"UYdtHfrvqef/N/vIY7I6LquRQqv/hxYEfETCfXdqr10=\""
+          "Value": "\"8W2KVtzlyprhvU0HQgfOdWV4CvyrJbyEAIDkshM2P5k=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 05 Dec 2024 11:58:26 GMT"
+          "Value": "Mon, 09 Dec 2024 18:17:50 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6566,7 +6566,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-UYdtHfrvqef/N/vIY7I6LquRQqv/hxYEfETCfXdqr10="
+          "Value": "sha256-8W2KVtzlyprhvU0HQgfOdWV4CvyrJbyEAIDkshM2P5k="
         }
       ]
     },
@@ -11185,7 +11185,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 08 Dec 2024 16:58:15 GMT"
+          "Value": "Mon, 09 Dec 2024 18:18:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11230,7 +11230,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 08 Dec 2024 16:58:15 GMT"
+          "Value": "Mon, 09 Dec 2024 18:18:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11275,7 +11275,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 08 Dec 2024 16:58:15 GMT"
+          "Value": "Mon, 09 Dec 2024 18:18:10 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11312,7 +11312,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 08 Dec 2024 16:58:15 GMT"
+          "Value": "Mon, 09 Dec 2024 18:18:10 GMT"
         },
         {
           "Name": "Cache-Control",
