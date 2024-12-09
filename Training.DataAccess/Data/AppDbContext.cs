@@ -21,6 +21,8 @@ public class AppDbContext : IdentityDbContext
 
     public DbSet<AppUser> AppUsers { get; set; }
 
+    public DbSet<ShoppingCart> ShoppingCart {  get; set; }
+
     // Seeding the table Categories 
     // public object Category { get; internal set; }
 
