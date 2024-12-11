@@ -18,7 +18,18 @@ namespace Training.DataAccess.Repository
             _db = db;
         }
 
+        public int DecrementCount(ShoppingCart cart, int count)
+        {
+            cart.Count = cart.Count - count;
+            _db.SaveChanges();
+            return cart.Count;
+        }
 
-
+        public int IncrementCount(ShoppingCart cart, int count)
+        {
+            cart.Count = cart.Count + count;
+            _db.SaveChanges();
+            return cart.Count;
+        }
     }
 }

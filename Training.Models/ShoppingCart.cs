@@ -14,7 +14,6 @@ namespace Training.Models
         public int Id { get; set; }
         public int MenuItemId { get; set; }
         [ForeignKey("MenuItemId")]
-        [NotMapped]
         [ValidateNever]
         public MenuItem? MenuItem { get; set; }
 
@@ -22,7 +21,6 @@ namespace Training.Models
         public int Count { get; set; }
         public string? AppUserId { get; set; }
         [ForeignKey("AppUserId")]
-        [NotMapped]
         [ValidateNever]
         public AppUser? AppUser { get; set; }
     }

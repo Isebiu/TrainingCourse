@@ -41,9 +41,21 @@ namespace Training.Pages.Customer.Home
                 //var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier); //extragem nameIdentifier din toate claim-urile
                 //ShoppingCart.AppUserId = claim.Value; //populam userId-ul in shopping Cart AppuserId
 
-                _unitOfWork.ShoppingCart.Add(ShoppingCart);
-                _unitOfWork.Save();
-                return RedirectToPage("Index");
+                ShoppingCart shoppingCartFromDb = _unitOfWork.ShoppingCart.GetFirstOrDefault(filter: x => x.AppUserId == ShoppingCart.AppUserId && 
+                 x.MenuItemId == ShoppingCart.MenuItemId); //conditiile vor fi true daca se gaseste un record in db in care sa fie acelasi userId si acelasi menuItem
+
+                if (shoppingCartFromDb == null)
+                {
+                    _unitOfWork.ShoppingCart.Add(ShoppingCart);
+                    _unitOfWork.Save();
+
+                }
+                else
+                {
+                    _unitOfWork.ShoppingCart.IncrementCount(shoppingCartFromDb, ShoppingCart.Count);
+                }
+                    
+                    return RedirectToPage("Index");
             }
 
             return Page();
