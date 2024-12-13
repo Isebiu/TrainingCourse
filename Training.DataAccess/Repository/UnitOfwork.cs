@@ -19,6 +19,11 @@ namespace Training.DataAccess.Repository
 
         public IShoppingCartRepository ShoppingCart { get; private set; }
 
+        public IOrderHeaderRepository OrderHeader { get; private set; }
+
+        public IOrderDetailsRepository OrderDetails { get; private set; }
+        public IAppUserRepository AppUser { get; private set; }
+
         public UnitOfwork(AppDbContext db)
         {
             _db = db;
@@ -26,6 +31,9 @@ namespace Training.DataAccess.Repository
             FoodType = new FoodTypeRepository(_db);
             MenuItem = new MenuItemRepository(_db);
             ShoppingCart = new ShoppingCartRepository(_db);
+            OrderHeader = new OrderHeaderRepository(_db);
+            OrderDetails = new OrderDetailsRepository(_db);
+            AppUser = new AppUserRepository(_db);
         }
 
         public void Save()

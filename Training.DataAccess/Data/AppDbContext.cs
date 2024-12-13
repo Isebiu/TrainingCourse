@@ -23,6 +23,9 @@ public class AppDbContext : IdentityDbContext
 
     public DbSet<ShoppingCart> ShoppingCart {  get; set; }
 
+    public DbSet<OrderHeader> OrderHeader { get; set; }
+    public DbSet<OrderDetails> OrderDetails { get; set; }
+
     // Seeding the table Categories 
     // public object Category { get; internal set; }
 

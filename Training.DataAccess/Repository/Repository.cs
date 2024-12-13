@@ -73,7 +73,7 @@ namespace Training.DataAccess.Repository
             dbSet.Remove(entity);
         }
 
-        public void RemoveRange(IEnumerable<T> entity)
+        public void RemoveRange(IList<T> entity)
         {
             dbSet.RemoveRange(entity);
         }

@@ -9,7 +9,7 @@ public interface IRepository<T> where T : class
 
     void Add(T entity);
     void Remove(T entity);
-    void RemoveRange(IEnumerable<T> entity);
+    void RemoveRange(IList<T> entity);
 
     IList<T> GetAll(Expression<Func<T, bool>>? filter = null,
         Func<IQueryable<T>,IOrderedQueryable<T>>? orderby =null,
