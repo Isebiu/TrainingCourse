@@ -1,5 +1,7 @@
 ﻿@page
+@using Microsoft.Extensions.Options
 @model Training.Pages.Customer.Cart.SummaryModel
+@inject IOptions<Training.Utility.StripeSettings> Stripe
 
 <form method="post">
 	<br />
@@ -134,6 +136,7 @@
 
 @section Scripts{
 	@{
+		<script src="https://js.stripe.com/v3/"></script>
 		<partial name="_ValidationScriptsPartial" />
 
 	}

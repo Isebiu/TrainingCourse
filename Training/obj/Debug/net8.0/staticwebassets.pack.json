@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\lawn_leaf.jpg",
+      "PackagePath": "staticwebassets\\images\\lawn_leaf.jpg"
+    },
+    {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\menuItems\\041be15a-e174-4ea0-9fff-73b81f05ca02.jpg",
       "PackagePath": "staticwebassets\\images\\menuItems\\041be15a-e174-4ea0-9fff-73b81f05ca02.jpg"
     },
@@ -63,6 +67,18 @@
     {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\menuItems\\be0d1aea-eee8-4d53-9ecc-412683d1d1bc.jpg",
       "PackagePath": "staticwebassets\\images\\menuItems\\be0d1aea-eee8-4d53-9ecc-412683d1d1bc.jpg"
+    },
+    {
+      "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\mild.png",
+      "PackagePath": "staticwebassets\\images\\mild.png"
+    },
+    {
+      "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\spicy.png",
+      "PackagePath": "staticwebassets\\images\\spicy.png"
+    },
+    {
+      "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\verySpicy.png",
+      "PackagePath": "staticwebassets\\images\\verySpicy.png"
     },
     {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\js\\menuItem.js",

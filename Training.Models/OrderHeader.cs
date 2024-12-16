@@ -34,7 +34,8 @@ namespace Training.Models
         public string PostalCode { get; set; }
         public string? Status { get; set; }
         public string? Comments { get; set; }
-        public string? TransactionId { get; set; } // il luam din stripe daca payment-ul va fi successfull
+        public string? SessionId { get; set; } 
+        public string? PaymentIntentId { get; set; } // il luam din stripe daca payment-ul va fi successfull
         [Required]
         public string Name { get; set; }
         [Display(Name ="Phone Number")]

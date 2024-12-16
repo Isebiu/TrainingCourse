@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+d7UafdXEM6y9B4K/RoK4m+gtR6TqhpIDMOZcRS0fKg=",
+  "Hash": "Q0wp6T2r8jN7GS7TUzoNrEaS8O3cuE1SSMjG0hTTr6k=",
   "Source": "Training",
   "BasePath": "_content/Training",
   "Mode": "Default",
@@ -1382,6 +1382,27 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\lawn_leaf.jpg",
+      "SourceId": "Training",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\",
+      "BasePath": "_content/Training",
+      "RelativePath": "images/lawn_leaf#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hpbkozvqgl",
+      "Integrity": "RWxDTU9wUPUm8CQYvTjdl7b2+Ez8yH6Fdsz0FovEK4g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\lawn_leaf.jpg"
+    },
+    {
       "Identity": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\menuItems\\041be15a-e174-4ea0-9fff-73b81f05ca02.jpg",
       "SourceId": "Training",
       "SourceType": "Discovered",
@@ -1632,6 +1653,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\menuItems\\be0d1aea-eee8-4d53-9ecc-412683d1d1bc.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\mild.png",
+      "SourceId": "Training",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\",
+      "BasePath": "_content/Training",
+      "RelativePath": "images/mild#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vj5hl3k7bc",
+      "Integrity": "pahdGx1E8HvF1qPizCU6cZFKhx3EWLlL35Z4RRiNYhQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\mild.png"
+    },
+    {
+      "Identity": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\spicy.png",
+      "SourceId": "Training",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\",
+      "BasePath": "_content/Training",
+      "RelativePath": "images/spicy#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "cbrqitb803",
+      "Integrity": "OF2HXWZQz3bL3lnrO/YqTmLk246avShbSU2x8uVOVgw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\spicy.png"
+    },
+    {
+      "Identity": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\verySpicy.png",
+      "SourceId": "Training",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\",
+      "BasePath": "_content/Training",
+      "RelativePath": "images/verySpicy#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5p27oyxr9s",
+      "Integrity": "ablgNKn/eKUEvJ5aYyrwuv7k6gQJkB44u7lInjF50Hs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\verySpicy.png"
     },
     {
       "Identity": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\js\\menuItem.js",
@@ -5341,6 +5425,88 @@
       ]
     },
     {
+      "Route": "images/lawn_leaf.hpbkozvqgl.jpg",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\lawn_leaf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4519489"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RWxDTU9wUPUm8CQYvTjdl7b2+Ez8yH6Fdsz0FovEK4g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hpbkozvqgl"
+        },
+        {
+          "Name": "label",
+          "Value": "images/lawn_leaf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RWxDTU9wUPUm8CQYvTjdl7b2+Ez8yH6Fdsz0FovEK4g="
+        }
+      ]
+    },
+    {
+      "Route": "images/lawn_leaf.jpg",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\lawn_leaf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "4519489"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RWxDTU9wUPUm8CQYvTjdl7b2+Ez8yH6Fdsz0FovEK4g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RWxDTU9wUPUm8CQYvTjdl7b2+Ez8yH6Fdsz0FovEK4g="
+        }
+      ]
+    },
+    {
       "Route": "images/menuItems/041be15a-e174-4ea0-9fff-73b81f05ca02.jpg",
       "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\menuItems\\041be15a-e174-4ea0-9fff-73b81f05ca02.jpg",
       "Selectors": [],
@@ -6321,6 +6487,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-qucYgWYmWORo8fF1GU03vgdFX6nM7RZIMg6gb4RAP+0="
+        }
+      ]
+    },
+    {
+      "Route": "images/mild.png",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\mild.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pahdGx1E8HvF1qPizCU6cZFKhx3EWLlL35Z4RRiNYhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-pahdGx1E8HvF1qPizCU6cZFKhx3EWLlL35Z4RRiNYhQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/mild.vj5hl3k7bc.png",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\mild.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"pahdGx1E8HvF1qPizCU6cZFKhx3EWLlL35Z4RRiNYhQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vj5hl3k7bc"
+        },
+        {
+          "Name": "label",
+          "Value": "images/mild.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-pahdGx1E8HvF1qPizCU6cZFKhx3EWLlL35Z4RRiNYhQ="
+        }
+      ]
+    },
+    {
+      "Route": "images/spicy.cbrqitb803.png",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\spicy.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OF2HXWZQz3bL3lnrO/YqTmLk246avShbSU2x8uVOVgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "cbrqitb803"
+        },
+        {
+          "Name": "label",
+          "Value": "images/spicy.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OF2HXWZQz3bL3lnrO/YqTmLk246avShbSU2x8uVOVgw="
+        }
+      ]
+    },
+    {
+      "Route": "images/spicy.png",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\spicy.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1371"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OF2HXWZQz3bL3lnrO/YqTmLk246avShbSU2x8uVOVgw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OF2HXWZQz3bL3lnrO/YqTmLk246avShbSU2x8uVOVgw="
+        }
+      ]
+    },
+    {
+      "Route": "images/verySpicy.5p27oyxr9s.png",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\verySpicy.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ablgNKn/eKUEvJ5aYyrwuv7k6gQJkB44u7lInjF50Hs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5p27oyxr9s"
+        },
+        {
+          "Name": "label",
+          "Value": "images/verySpicy.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ablgNKn/eKUEvJ5aYyrwuv7k6gQJkB44u7lInjF50Hs="
+        }
+      ]
+    },
+    {
+      "Route": "images/verySpicy.png",
+      "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\images\\verySpicy.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1366"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ablgNKn/eKUEvJ5aYyrwuv7k6gQJkB44u7lInjF50Hs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 16 Dec 2024 15:55:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ablgNKn/eKUEvJ5aYyrwuv7k6gQJkB44u7lInjF50Hs="
         }
       ]
     },

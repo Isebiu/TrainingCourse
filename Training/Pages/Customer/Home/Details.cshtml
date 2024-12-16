@@ -30,7 +30,7 @@
                                         <p class="text-secondary">@Html.Raw(Model.ShoppingCart.MenuItem.Description)</p>
 
                                         <div class="form-floating my-2">
-                                            <input asp-for="ShoppingCart.Count" class="form-control" aria-required="true" />
+                                            <input asp-for="ShoppingCart.Count" class="form-control" aria-required="true" value="1" />
                                             <label asp-for="ShoppingCart.Count"></label>
                                             <span asp-validation-for="ShoppingCart.Count" class="text-danger"></span>
                                         </div>
