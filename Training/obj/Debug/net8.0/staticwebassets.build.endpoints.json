@@ -2249,7 +2249,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 09 Dec 2024 18:18:10 GMT"
+          "Value": "Tue, 17 Dec 2024 14:43:24 GMT"
         }
       ],
       "EndpointProperties": [
@@ -2294,7 +2294,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 09 Dec 2024 18:18:10 GMT"
+          "Value": "Tue, 17 Dec 2024 14:43:24 GMT"
         }
       ],
       "EndpointProperties": [
@@ -3941,6 +3941,88 @@
         {
           "Name": "label",
           "Value": "js/menuItem.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/orderList.gjoh2gvjz0.js",
+      "AssetFile": "js/orderList.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 15:17:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "gjoh2gvjz0"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM="
+        },
+        {
+          "Name": "label",
+          "Value": "js/orderList.js"
+        }
+      ]
+    },
+    {
+      "Route": "js/orderList.js",
+      "AssetFile": "js/orderList.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1229"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 18 Dec 2024 15:17:48 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM="
         }
       ]
     },

@@ -18,6 +18,7 @@ wwwroot\images\mild.png
 wwwroot\images\spicy.png
 wwwroot\images\verySpicy.png
 wwwroot\js\menuItem.js
+wwwroot\js\orderList.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

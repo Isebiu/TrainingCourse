@@ -1,0 +1,28 @@
+﻿@page
+@model Training.Pages.Admin.Order.OrderListModel
+
+<div class="container">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2 class="text-dark">  Order List  </h2>
+        </div>
+
+    </div>
+
+        <table id="DT_OrderList" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Order Total</th>
+                    <th>Phone Number</th>
+                </tr>
+            </thead>
+        </table>
+
+</div>
+
+@section Scripts {
+    <script src="~/js/orderList.js"></script>
+}

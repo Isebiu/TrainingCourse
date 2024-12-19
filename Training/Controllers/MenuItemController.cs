@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Training.DataAccess.Repository.IRepository;
 
 namespace Training.Controllers
@@ -17,6 +18,7 @@ namespace Training.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public IActionResult Get()
         {
             var menuItemList = _unitOfWork.MenuItem.GetAll(includeProperties: "Category,FoodType"); //returnam toate itemele din meniu in variabila noastra

@@ -85,6 +85,10 @@
       "PackagePath": "staticwebassets\\js\\menuItem.js"
     },
     {
+      "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\js\\orderList.js",
+      "PackagePath": "staticwebassets\\js\\orderList.js"
+    },
+    {
       "Id": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

@@ -19,6 +19,7 @@ namespace Training.Utility
         public const string StatusProcessing = "Being Prepared";
         public const string StatusReady = "Ready for delivery";
         public const string StatusDelivered = "Delivered";
+        public const string StatusCompleted = "Completed";
         public const string StatusCancelled = "Cancelled";
         public const string StatusRefunded = "Refunded";
         
