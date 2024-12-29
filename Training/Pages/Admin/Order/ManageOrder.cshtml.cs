@@ -11,7 +11,7 @@ namespace Training.Pages.Admin.Order
     {
         private readonly IUnitOfWork _unitOfWork;
 
-        public List<OrderDetailVM> OrderDetailsVM { get; set; }
+        public List<OrderDetailVM> OrderDetailsVM { get; set; } //OrderDetail view model pt a include mai multe prop intr-un sg view model
         public ManageOrderModel(IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
