@@ -38,7 +38,7 @@ namespace Training.Controllers
             }
 
 
-            return Json(new { success = true, message = "Dlete success." }); //json care va fi returnat de API 
+            return Json(new { success = true, message = "Delete success." }); //json care va fi returnat de API 
         }
     }
 }

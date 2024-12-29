@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Training.DataAccess.Repository.IRepository;
@@ -7,6 +8,8 @@ using Training.Utility;
 
 namespace Training.Pages.Admin.Order
 {
+    //rolurile autorizate pe pagina
+    [Authorize(Roles =$"{SD.KitchenRole},{SD.ManagerRole}")]
     public class ManageOrderModel : PageModel
     {
         private readonly IUnitOfWork _unitOfWork;
@@ -31,5 +34,28 @@ namespace Training.Pages.Admin.Order
             }
 
         }
+        public IActionResult OnPostOrderInProcess(int orderId)
+        {
+            _unitOfWork.OrderHeader.UpdateStatus(orderId, SD.StatusProcessing);
+            _unitOfWork.Save();
+            return RedirectToPage("ManageOrder");
+        }
+        public IActionResult OnPostOrderReady(int orderId)
+        {
+            _unitOfWork.OrderHeader.UpdateStatus(orderId, SD.StatusReady);
+            _unitOfWork.Save();
+            return RedirectToPage("ManageOrder");
+        }
+        public IActionResult OnPostOrderCancel(int orderId)
+        {
+            _unitOfWork.OrderHeader.UpdateStatus(orderId, SD.StatusCancelled);
+            //var orderCanceled = _unitOfWork.OrderHeader.GetFirstOrDefault(u => u.Id == orderId);
+
+            _unitOfWork.Save();
+            return RedirectToPage("ManageOrder");
+            
+
+        }
+
     }
 }

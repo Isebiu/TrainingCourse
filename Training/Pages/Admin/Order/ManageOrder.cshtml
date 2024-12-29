@@ -1,7 +1,7 @@
 ﻿@page
 @model Training.Pages.Admin.Order.ManageOrderModel
 @using Training.Utility
-
+@*!! Accesibil doar pentru Kitchen si manager ->page model *@
 
 <h1 class="text-dark py-3">Manage Order's</h1>
 <form method="post">
@@ -28,7 +28,7 @@
 
                         @if(order.OrderHeader.Status == SD.StatusApproved)
                         { //doar daca statusul e approved (plata a fost relizata ci succes) -> Start Cooking
-                            <button type="submit" class="btn btn-dark form-control mb-3">
+                                <button type="submit" class="btn btn-dark form-control mb-3" asp-page-handler="OrderInProcess" asp-route-orderId="@order.OrderHeader.Id">
                                 <i class="bi bi-check-square"></i> &nbsp; Start Cooking
                             </button>
 
@@ -36,14 +36,14 @@
                         @if (order.OrderHeader.Status == SD.StatusProcessing)
                         { //button-> ready doar daca status e in process
 
-                            <button type="submit" class="btn btn-success form-control mb-3">
+                                <button type="submit" class="btn btn-success form-control mb-3" asp-page-handler="OrderReady" asp-route-orderId="@order.OrderHeader.Id">
                                 <i class="bi bi-emoji-laughing"></i> &nbsp; Order Ready
                             </button>
 
                         }
 
                          @* afisam Cancel order tot timpul  *@
-                            <button type="submit" class="btn btn-danger form-control mb-3">
+                            <button type="submit" class="btn btn-danger form-control mb-3" asp-page-handler="OrderCancel" asp-route-orderId="@order.OrderHeader.Id">
                                 <i class="bi bi-x-square-fill"></i> &nbsp; Cancel Order
                             </button>
 
