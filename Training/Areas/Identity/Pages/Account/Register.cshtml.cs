@@ -124,7 +124,7 @@ namespace Training.Areas.Identity.Pages.Account
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid) //verif daca modelstate e valid
             {
-                var user = CreateUser(); //creaza un nou user -> creaza o instanta default pt identitate user
+                var user = CreateUser(); //creaza un nou user -> creaza o instanta pt identitate user
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None); //seteaza numele
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None); //seteaza email-ul
@@ -179,7 +179,7 @@ namespace Training.Areas.Identity.Pages.Account
                         pageHandler: null,
                         values: new { area = "Identity", userId = userId, code = code, returnUrl = returnUrl },
                         protocol: Request.Scheme);
-
+                    
                     await _emailSender.SendEmailAsync(Input.Email, "Confirm your email",
                         $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(callbackUrl)}'>clicking here</a>."); //trimitem mail-ul pentru confirmare
 

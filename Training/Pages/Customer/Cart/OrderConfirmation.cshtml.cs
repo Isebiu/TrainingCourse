@@ -32,10 +32,12 @@ namespace Training.Pages.Customer.Cart
                 if(session.PaymentStatus.ToLower()=="paid")
                 {
                     orderHeader.Status = SD.StatusApproved; //schimbam statusul order-ului
+                    orderHeader.PaymentIntentId = session.PaymentIntentId;
                     _unitOfWork.Save();
                 }
                 List<ShoppingCart> shoppingCartList = _unitOfWork.ShoppingCart.GetAll(u => u.AppUserId == orderHeader.UserId).ToList();
                 _unitOfWork.ShoppingCart.RemoveRange(shoppingCartList);
+                
                 _unitOfWork.Save();
                 OrderId = id;
 

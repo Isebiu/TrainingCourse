@@ -15,7 +15,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-    //.AddRazorRuntimeCompilation();
+//.AddRazorRuntimeCompilation();
+//builder.Services.AddControllers();
 
 //var connstr = builder.Configuration.GetConnectionString("DefaultConnection");
 
@@ -36,6 +37,23 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.LogoutPath = "/Identity/Account/Logout";
     options.AccessDeniedPath = "/Identity/Account/AccessDenied";
 });
+
+//Adugam session in project => trebuie sa adaugam 2 servicii
+builder.Services.AddDistributedMemoryCache();//pt stocarea in ram de date volatile
+builder.Services.AddSession(options => //configuram sesiunea cu optiuni (timeout, cookie...)
+{
+    options.IdleTimeout = TimeSpan.FromMinutes(100);
+    options.Cookie.HttpOnly = true;
+    options.Cookie.IsEssential = true;
+});
+//adaugare logare cu facebook
+builder.Services.AddAuthentication().AddFacebook(options =>
+{
+    options.AppId = "3741905526074367";
+    options.AppSecret = "03eaaade85db931e16370ce990b53e6f";
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -57,6 +75,8 @@ StripeConfiguration.ApiKey = key;
 app.UseAuthentication();
 
 app.UseAuthorization();
+
+app.UseSession();
 
 app.MapRazorPages();
 

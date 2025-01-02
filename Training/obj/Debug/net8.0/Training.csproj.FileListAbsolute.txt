@@ -572,3 +572,9 @@ C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\refint\
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\Training.pdb
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\Training.genruntimeconfig.cache
 C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\obj\Debug\net8.0\ref\Training.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\MailKit.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\MimeKit.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\urech\OneDrive\Desktop\TrainingCourse\Training\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Facebook.dll

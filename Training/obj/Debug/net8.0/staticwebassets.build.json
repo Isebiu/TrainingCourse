@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dQvVwCNYNhfFNVKoUE/+0ZfTEpC0Mpdtxltod8BC2Ng=",
+  "Hash": "3jd2XPKe/HTIH5St51S+SpRWjHHy8wzC0oCZOyCEZGs=",
   "Source": "Training",
   "BasePath": "_content/Training",
   "Mode": "Default",
@@ -1753,8 +1753,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "gjoh2gvjz0",
-      "Integrity": "fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM=",
+      "Fingerprint": "fgl3jsj7s4",
+      "Integrity": "X2JBaAZA9zl91/oKK+4bNL0bVlUaabVY4VU9cii2+/U=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\orderList.js"
@@ -6840,7 +6840,7 @@
       ]
     },
     {
-      "Route": "js/orderList.gjoh2gvjz0.js",
+      "Route": "js/orderList.fgl3jsj7s4.js",
       "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\js\\orderList.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -6850,7 +6850,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1229"
+          "Value": "2893"
         },
         {
           "Name": "Content-Type",
@@ -6858,11 +6858,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM=\""
+          "Value": "\"X2JBaAZA9zl91/oKK+4bNL0bVlUaabVY4VU9cii2+/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 15:17:48 GMT"
+          "Value": "Mon, 30 Dec 2024 12:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6872,7 +6872,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "gjoh2gvjz0"
+          "Value": "fgl3jsj7s4"
         },
         {
           "Name": "label",
@@ -6880,7 +6880,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM="
+          "Value": "sha256-X2JBaAZA9zl91/oKK+4bNL0bVlUaabVY4VU9cii2+/U="
         }
       ]
     },
@@ -6895,7 +6895,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1229"
+          "Value": "2893"
         },
         {
           "Name": "Content-Type",
@@ -6903,11 +6903,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM=\""
+          "Value": "\"X2JBaAZA9zl91/oKK+4bNL0bVlUaabVY4VU9cii2+/U=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 18 Dec 2024 15:17:48 GMT"
+          "Value": "Mon, 30 Dec 2024 12:19:06 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6917,7 +6917,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fMg+5Q7TDh0GF7N+L3YHoT5ytUIEDJK9xMoQL2p09mM="
+          "Value": "sha256-X2JBaAZA9zl91/oKK+4bNL0bVlUaabVY4VU9cii2+/U="
         }
       ]
     },
@@ -11700,7 +11700,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 14:43:24 GMT"
+          "Value": "Thu, 02 Jan 2025 18:26:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11745,7 +11745,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 14:43:24 GMT"
+          "Value": "Thu, 02 Jan 2025 18:26:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11790,7 +11790,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 14:43:24 GMT"
+          "Value": "Thu, 02 Jan 2025 18:26:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -11827,7 +11827,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 17 Dec 2024 14:43:24 GMT"
+          "Value": "Thu, 02 Jan 2025 18:26:26 GMT"
         },
         {
           "Name": "Cache-Control",

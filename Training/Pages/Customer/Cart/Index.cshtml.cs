@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Security.Claims;
 using Training.DataAccess.Repository.IRepository;
 using Training.Models;
+using Training.Utility;
 
 namespace Training.Pages.Customer.Cart
 {
@@ -47,8 +48,12 @@ namespace Training.Pages.Customer.Cart
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(u => u.Id == cartId); //retrieve the cart from db based on id
             if (cart.Count == 1)
             {
+                var count = _unitOfWork.ShoppingCart.GetAll(u => u.AppUserId == cart.AppUserId).ToList().Count - 1;
                 _unitOfWork.ShoppingCart.Remove(cart);
                 _unitOfWork.Save();
+                HttpContext.Session.SetInt32(SD.SessionCart, count);
+
+
             }
             else
             {
@@ -61,8 +66,12 @@ namespace Training.Pages.Customer.Cart
         public IActionResult OnPostRemove(int cartId)
         {
             var cart = _unitOfWork.ShoppingCart.GetFirstOrDefault(u => u.Id == cartId); //retrieve the cart from db based on id
+            var count = _unitOfWork.ShoppingCart.GetAll(u => u.AppUserId == cart.AppUserId).ToList().Count-1;
+
             _unitOfWork.ShoppingCart.Remove(cart); //stergem caruciorul din db
             _unitOfWork.Save(); //salvam db-ul in urma stergerii 
+
+            HttpContext.Session.SetInt32(SD.SessionCart, count);
             return RedirectToPage("/Customer/Cart/Index");
         }
     }

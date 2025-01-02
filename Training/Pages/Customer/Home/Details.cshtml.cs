@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore.Metadata.Internal;
@@ -6,6 +7,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Security.Claims;
 using Training.DataAccess.Repository.IRepository;
 using Training.Models;
+using Training.Utility;
 
 namespace Training.Pages.Customer.Home
 {
@@ -33,6 +35,7 @@ namespace Training.Pages.Customer.Home
                 MenuItemId = id //populam MenuItemId 
             };
         }
+
         public IActionResult OnPost()
         {
             if (ModelState.IsValid) 
@@ -48,6 +51,10 @@ namespace Training.Pages.Customer.Home
                 {
                     _unitOfWork.ShoppingCart.Add(ShoppingCart);
                     _unitOfWork.Save();
+                    //accesam session cu HttpContext
+                    //setint32 setam in integer in sesiunea noastra ( pentru count)
+                    var count = _unitOfWork.ShoppingCart.GetAll(u => u.AppUserId == ShoppingCart.AppUserId).ToList().Count;
+                    HttpContext.Session.SetInt32(SD.SessionCart, count);
 
                 }
                 else
