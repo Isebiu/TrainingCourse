@@ -1,5 +1,11 @@
 ﻿.fixed-height-image {
-    height: 500px; /* Ajustează înălțimea după preferință */
+    height: 450px; 
     object-fit: cover;
     width: 100%;
 }
+/*.card {
+    min-height: 650px;*/ /* Înălțimea minimă a cardurilor */
+    /*display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}*/
