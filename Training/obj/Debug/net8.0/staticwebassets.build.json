@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UIb1n1vCHv9WsVowp2Mj7ZeDHw/7I99cKOaMiL4uzUI=",
+  "Hash": "Pfm0RoM1C93oG3JECw5zmha7743k40eaQcOhQpiceIk=",
   "Source": "Training",
   "BasePath": "_content/Training",
   "Mode": "Default",
@@ -1333,8 +1333,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "qrphvvz12i",
-      "Integrity": "tmfYiQuVC4V3DzhmlvkTNDAC/iK7HNmSbiHYtPfsSkg=",
+      "Fingerprint": "n5k0jbzfzh",
+      "Integrity": "C1W4hIw7fuNAUOlED41r12xdMCmZf2Xm/8mSD+keUpA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\homepage.css"
@@ -2998,11 +2998,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tmfYiQuVC4V3DzhmlvkTNDAC/iK7HNmSbiHYtPfsSkg=\""
+          "Value": "\"C1W4hIw7fuNAUOlED41r12xdMCmZf2Xm/8mSD+keUpA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 03 Jan 2025 19:58:37 GMT"
+          "Value": "Fri, 03 Jan 2025 20:10:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3012,12 +3012,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tmfYiQuVC4V3DzhmlvkTNDAC/iK7HNmSbiHYtPfsSkg="
+          "Value": "sha256-C1W4hIw7fuNAUOlED41r12xdMCmZf2Xm/8mSD+keUpA="
         }
       ]
     },
     {
-      "Route": "css/homepage.qrphvvz12i.css",
+      "Route": "css/homepage.n5k0jbzfzh.css",
       "AssetFile": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training\\wwwroot\\css\\homepage.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -3035,11 +3035,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tmfYiQuVC4V3DzhmlvkTNDAC/iK7HNmSbiHYtPfsSkg=\""
+          "Value": "\"C1W4hIw7fuNAUOlED41r12xdMCmZf2Xm/8mSD+keUpA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 03 Jan 2025 19:58:37 GMT"
+          "Value": "Fri, 03 Jan 2025 20:10:14 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3049,7 +3049,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "qrphvvz12i"
+          "Value": "n5k0jbzfzh"
         },
         {
           "Name": "label",
@@ -3057,7 +3057,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-tmfYiQuVC4V3DzhmlvkTNDAC/iK7HNmSbiHYtPfsSkg="
+          "Value": "sha256-C1W4hIw7fuNAUOlED41r12xdMCmZf2Xm/8mSD+keUpA="
         }
       ]
     },

@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Training.Utility;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Stripe;
+using Training.DataAccess.DbInit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -29,6 +30,8 @@ builder.Services.AddIdentity<IdentityUser,IdentityRole>()
     .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders(); 
 
 builder.Services.AddSingleton<IEmailSender, EmailSender>();
+
+builder.Services.AddScoped<IDbInit, DbInit>();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfwork>(); //inregistram Repo-urile in DI container 
 builder.Services.ConfigureApplicationCookie(options =>
@@ -68,6 +71,7 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+SeedDataBase();
 
 string key = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();
 StripeConfiguration.ApiKey = key;
@@ -83,3 +87,13 @@ app.MapRazorPages();
 app.MapControllers(); //it give us the ability to use controllers 
 
 app.Run();
+
+
+void SeedDataBase()
+{
+    using (var scope = app.Services.CreateScope())
+    {
+        var dbInit = scope.ServiceProvider.GetRequiredService<IDbInit>();
+        dbInit.Init();
+    }
+}

@@ -135,15 +135,6 @@ namespace Training.Areas.Identity.Pages.Account
 
                 var result = await _userManager.CreateAsync(user, Input.Password); // metoda principala care creaza userul si parola scrisa de acesta 
 
-                if(! await _roleManager.RoleExistsAsync(SD.KitchenRole))
-                {
-                    await _roleManager.CreateAsync(new IdentityRole(SD.KitchenRole));
-                    //_roleManager.CreateAsync(new IdentityRole(SD.KitchenRole)).GetAwaiter().GetResult();
-                    await _roleManager.CreateAsync(new IdentityRole(SD.ManagerRole));
-                    await _roleManager.CreateAsync(new IdentityRole(SD.FrontDeskRole));
-                    await _roleManager.CreateAsync(new IdentityRole(SD.CutromerRole));
-                }
-
                 if (result.Succeeded)
                 {
                     string role = Request.Form["rdUserRole"].ToString();

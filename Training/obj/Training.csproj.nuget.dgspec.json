@@ -33,6 +33,9 @@
             "projectReferences": {
               "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training.Models\\Training.Models.csproj": {
                 "projectPath": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training.Models\\Training.Models.csproj"
+              },
+              "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training.Utility\\Training.Utility.csproj": {
+                "projectPath": "C:\\Users\\urech\\OneDrive\\Desktop\\TrainingCourse\\Training.Utility\\Training.Utility.csproj"
               }
             }
           }

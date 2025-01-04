@@ -3243,7 +3243,8 @@
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.11",
           "Microsoft.EntityFrameworkCore": "8.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.11",
-          "Training.Models": "1.0.0"
+          "Training.Models": "1.0.0",
+          "Training.Utility": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Training.DataAccess.dll": {}
