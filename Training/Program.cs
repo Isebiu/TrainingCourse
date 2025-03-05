@@ -52,8 +52,8 @@ builder.Services.AddSession(options => //configuram sesiunea cu optiuni (timeout
 //adaugare logare cu facebook
 builder.Services.AddAuthentication().AddFacebook(options =>
 {
-    options.AppId = "3741905526074367";
-    options.AppSecret = "03eaaade85db931e16370ce990b53e6f";
+    options.AppId = "---";
+    options.AppSecret = "---";
 });
 
 
